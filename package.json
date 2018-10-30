@@ -1,0 +1,19 @@
+{
+  "name": "cdci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=html --reporter=text mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "nyc": "^13.1.0"
+  }
+}
